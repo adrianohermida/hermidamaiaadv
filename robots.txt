@@ -14,3 +14,4 @@ User-agent: psbot
 Disallow: /
 User-agent: *
 Disallow: 
+<meta name='robots' content='noindex'>
