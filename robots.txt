@@ -14,5 +14,3 @@ User-agent: psbot
 Disallow: /
 User-agent: *
 Disallow: 
-Disallow: /assets
-Disallow: /resources
