@@ -15,5 +15,4 @@ Disallow: /
 User-agent: *
 Disallow: 
 Disallow: /assets
-Disallow: /docs
 Disallow: /resources
