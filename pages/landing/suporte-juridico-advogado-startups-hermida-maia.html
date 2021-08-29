@@ -910,34 +910,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Freshchat->
- <script>
-  function initFreshChat() {
-    window.fcWidget.init({
-      token: "38a4679f-b498-4991-ba08-83fd9fc5053c",
-      host: "https://wchat.freshchat.com"
-    });
-  }
-  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
-</script>
-
-<script type='text/javascript'>
-(function() {
-window.zarget=true;
-var protocol = ('https:' == document.location.protocol ? 'https:' : 'http:');
-var scriptTag = document.createElement('script');
-scriptTag.type = 'text/javascript';
-scriptTag.async = true;
-scriptTag.src = protocol +'//cdn.freshmarketer.com/412204/1093303.js';
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(scriptTag, s);
-})();
-function zargetTimeout() {
-window.zarget = false;
-}
-window.zargetTimer = setTimeout(zargetTimeout, 3000);
-</script>                              
+    </div>                           
   </footer>
   <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
   <script src="../../assets/js/purpose.core.js"></script>
@@ -949,6 +922,32 @@ window.zargetTimer = setTimeout(zargetTimeout, 3000);
   <script src="../../assets/js/purpose.js"></script>
   <!-- Demo JS - remove it when starting your project -->
   <script src="../../assets/js/demo.js"></script>
+  <script>
+    function initFreshChat() {
+      window.fcWidget.init({
+        token: "38a4679f-b498-4991-ba08-83fd9fc5053c",
+        host: "https://wchat.freshchat.com"
+      });
+    }
+    function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+  </script>
+  
+  <script type='text/javascript'>
+  (function() {
+  window.zarget=true;
+  var protocol = ('https:' == document.location.protocol ? 'https:' : 'http:');
+  var scriptTag = document.createElement('script');
+  scriptTag.type = 'text/javascript';
+  scriptTag.async = true;
+  scriptTag.src = protocol +'//cdn.freshmarketer.com/412204/1093303.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(scriptTag, s);
+  })();
+  function zargetTimeout() {
+  window.zarget = false;
+  }
+  window.zargetTimer = setTimeout(zargetTimeout, 3000);
+  </script>
 </body>
 
 </html>
