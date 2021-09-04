@@ -8,22 +8,23 @@
 
 
 <url>
-  <loc>https://www.hermidamaia.adv.br/</loc>
+  <loc>https://hermidamaia.adv.br/</loc>
   <lastmod>2021-08-27T04:01:28+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
+   <changefreq>monthly</changefreq>
+   <priority>0.80</priority>
+  </url>
 <url>
-  <loc>https://www.hermidamaia.adv.br/index.html</loc>
-  <lastmod>2021-08-27T04:01:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.hermidamaia.adv.br/pages/secondary/sobre-advogado-startups-hermida-maia.html</loc>
+  <loc>https://hermidamaia.adv.br/index.html</loc>
   <lastmod>2021-08-27T04:01:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.hermidamaia.adv.br/pages/landing/servicos-advogado-startups-hermida-maia.html</loc>
+  <loc>https://hermidamaia.adv.br/pages/secondary/sobre-advogado-startups-hermida-maia.html</loc>
+  <lastmod>2021-08-27T04:01:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hermidamaia.adv.br/pages/landing/servicos-advogado-startups-hermida-maia.html</loc>
   <lastmod>2021-08-27T04:01:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -33,7 +34,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.hermidamaia.adv.br/pages/secondary/contato-advogado-startup-hermida-maia.html</loc>
+  <loc>https://hermidamaia.adv.br/pages/secondary/contato-advogado-startup-hermida-maia.html</loc>
   <lastmod>2021-08-27T04:01:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
