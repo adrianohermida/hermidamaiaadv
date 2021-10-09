@@ -1,4 +1,4 @@
-'use strict';
+assets'use strict';
 
 // Gulp file to automate the various tasks
 

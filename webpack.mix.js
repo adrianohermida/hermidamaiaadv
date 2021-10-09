@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+assetslet mix = require('laravel-mix');
 
 mix.setPublicPath('assets')
     .sass('resources/scss/purpose.scss', 'assets/css')
