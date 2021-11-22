@@ -448,7 +448,7 @@
   <script>
     <!-- Script Mail -->
 function sendMail(){
-  emailjs.init("user_We81RgxANFr6lOQvkkgdi");
+  emailjs.init("user_rHRCE6gZZwCKlQ4XKykut");
   document.querySelector('.contactform-submit').innerText = "Enviando..."
   var templateParams = {
       from_name: document.querySelector('#nome').value,
@@ -457,7 +457,7 @@ function sendMail(){
       message_html: document.querySelector('#mensagem').value
   };
   
-  emailjs.send('yandex_hermidamaia', 'template_4qw58bl', templateParams)
+  emailjs.send('yandex_hermidamaia', 'template_gx7v5p8', templateParams)
   .then(function(response) {
       document.querySelector('.contactform-submit').innerText = "Enviado!"
       console.log('SUCCESS!', response.status, response.text);
