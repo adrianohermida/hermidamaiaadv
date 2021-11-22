@@ -291,14 +291,26 @@
                   <div class="col-lg-6">
                     <h3>Fale Conosco</h3>
                     <p class="lead">Se houver algo em que possamos ajudá-lo, informe-nos. Teremos todo o gosto em oferecer-lhe a nossa ajuda.</p>
-                               <!-- Freshdesk Form -->
-                    <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
-                    <style type="text/css" media="screen, projection">
-                      @import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css); 
-                    </style> 
-                    <iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://hermidamaiaadv.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&searchArea=no" scrolling="no" height="500px" width="100%" frameborder="0" >
-                    </iframe>
-                               <!-- Freshdesk Form -->
+                               <!-- Form -->
+                               <form class="mt-5">
+              <div class="form-group">
+                <label class="sr-only">Seu nome</label>
+                <input class="form-control form-control-lg" id="nome" placeholder="Seu nome" type="text">
+              </div>
+              <div class="form-group">
+                <label class="sr-only">Endereço de e-mail</label>
+                <input class="form-control form-control-lg" id="email" placeholder="Endereço de e-mail" type="text">
+              </div>
+              <div class="form-group">
+                <label class="sr-only">Digite sua mensagem	</label>
+                <textarea class="form-control form-control-lg textarea-autosize" rows="5" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+              </div>
+              <div class="g-recaptcha" data-sitekey="6Lc_7OoUAAAAACoxQsple68tOEv365RglCui1gfM"></div>
+              <button type="submit" class="btn btn-dark rounded-pill mt-4 g-recaptcha contactform-submit" 
+                    data-sitekey="6Lc15eoUAAAAALnQGMzIPtgOx_k6eyrlvBznzIaV" data-callback='onSubmit' onclick="sendMail()">
+                    Enviar mensagem
+              </button>
+                               <!-- Form -->
 	</form> 	 
           </div>
           <div class="col-lg-5 ml-lg-auto">
@@ -433,6 +445,28 @@
       </div>
     </div>
   </footer>
+  <script>
+    <!-- Script Mail -->
+function sendMail(){
+  emailjs.init("user_We81RgxANFr6lOQvkkgdi");
+  document.querySelector('.contactform-submit').innerText = "Enviando..."
+  var templateParams = {
+      from_name: document.querySelector('#nome').value,
+      emailname: document.querySelector('#email').value,
+      to_name: 'Hermida Maia',
+      message_html: document.querySelector('#mensagem').value
+  };
+  
+  emailjs.send('yandex_hermidamaia', 'template_4qw58bl', templateParams)
+  .then(function(response) {
+      document.querySelector('.contactform-submit').innerText = "Enviado!"
+      console.log('SUCCESS!', response.status, response.text);
+  }, function(error) {
+      document.querySelector('.contactform-submit').innerText = "Falha ao enviar"
+      console.log('FAILED...', error);
+  });
+}
+</script>
   <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
   <script src="../../assets/js/purpose.core.js"></script>
   <!-- Page JS -->
